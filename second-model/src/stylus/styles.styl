@@ -1,0 +1,196 @@
+$background-color = #E8F5E9
+$primary-color = #66BB6A
+$secondary-color = #388E3C
+$header-color = #2E7D32
+$sidebar-bg-color = #F1F8E9
+$border-color = #AED581
+$text-color = #333
+
+* 
+  box-sizing border-box
+  margin 0
+  padding 0
+  font-family Arial, sans-serif
+
+body
+  background-color $background-color
+  color $text-color
+  height 100vh
+
+.container
+  width 100%
+  margin 0 auto
+  height 100%
+
+.header
+  display flex
+  justify-content space-between
+  align-items center
+  background-color $header-color
+  padding 10px
+  color white
+  border-bottom 2px solid $border-color
+  position fixed
+  top 0
+  left 0
+  width 100%
+  z-index 1000
+
+.logo
+  font-size 24px
+  font-weight bold
+
+.search-bar
+  display flex
+  gap 10px
+
+.search-bar input
+  padding 5px
+  border 1px solid $border-color
+  border-radius 5px
+
+.search-bar button
+  padding 5px 10px
+  background-color $primary-color
+  border none
+  border-radius 5px
+  cursor pointer
+
+.search-bar button:hover
+  background-color $secondary-color
+
+.cart
+  display flex
+  align-items center
+
+.cart button
+  padding 5px 20px
+  background-color $primary-color
+  border none
+  border-radius 5px
+  cursor pointer
+  color white
+
+.cart button:hover
+  background-color $secondary-color
+
+.main-content
+  display flex
+  margin-top 60px
+  height calc(100vh - 70px)
+  padding 20px
+
+.sidebar
+  width 15%
+  background-color $sidebar-bg-color
+  padding 20px
+  border-right 2px solid $border-color
+  height 100%
+  position fixed
+  top 50px
+  left 0
+  overflow hidden
+
+.sidebar nav ul
+  list-style-type none
+
+.sidebar nav ul li
+  margin-bottom 20px
+
+.sidebar nav ul li a
+  text-decoration none
+  color $text-color
+  padding 10px
+  display block
+
+.sidebar nav ul li a:hover
+  background-color $secondary-color
+  color white
+  transition background-color 0.3s ease
+
+.product-grid
+  width 85%
+  padding 20px
+  margin-left 15%
+
+.product-table
+  width 100%
+  display flex
+  flex-wrap wrap
+  gap 20px
+
+.product-card
+  border 2px solid $border-color
+  padding 10px
+  background-color white
+  text-align center
+  flex 1 0 calc(25% - 20px)
+  max-width calc(25% - 20px)
+
+.product-image img
+  width 100%
+  height auto
+  aspect-ratio 4/3
+  object-fit cover
+  margin-bottom 10px
+
+.product-info
+  display flex
+  justify-content space-between
+  align-items center
+
+.product-name, .product-price
+  text-align left
+
+.buy-button
+  background-color $primary-color
+  border none
+  padding 5px 10px
+  border-radius 5px
+  cursor pointer
+
+.buy-button:hover
+  background-color $secondary-color
+
+@media screen and (max-width: 1200px)
+  .product-card
+    flex 1 0 calc(33.33% - 20px)
+    max-width calc(33.33% - 20px)
+
+@media screen and (max-width: 900px)
+  .product-card
+    flex 1 0 calc(50% - 20px)
+    max-width calc(50% - 20px)
+    
+  .sidebar
+    width 20%
+
+@media screen and (max-width: 600px)
+  .product-card
+    flex 1 0 calc(100% - 20px)
+    max-width calc(100% - 20px)
+    
+  .sidebar
+    width 100%
+    position relative
+    border-right none
+    
+  .product-grid
+    margin-left 0
+    width 100%
+
+@media screen and (min-width: 3000px)
+  .container
+    max-width 3000px
+    margin 0 auto
+
+  .product-grid
+    justify-content center
+
+  .product-table
+    flex-wrap wrap
+
+  .product-card
+    padding 20px
+    flex 1 0 calc(25% - 20px)
+    max-width calc(25% - 20px)
