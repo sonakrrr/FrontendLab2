@@ -4,199 +4,167 @@
   padding: 0;
   font-family: Arial, sans-serif;
 }
-
 body {
-  background-color: #E8F5E9;
+  background-color: #e8f5e9;
   color: #333;
   min-height: 100vh;
   display: block;
 }
-
 .container {
   width: 100%;
   margin: 0 auto;
 }
-
 .header {
-  background-color: #2E7D32;
+  background-color: #2e7d32;
   padding: 10px;
-  border-bottom: 2px solid #AED581;
+  border-bottom: 2px solid #aed581;
   overflow: hidden;
 }
-
 .logo {
   font-size: 24px;
   font-weight: bold;
-  color: white;
+  color: #fff;
   float: left;
 }
-
 .button-container {
   text-align: center;
   margin: 20px 0;
 }
-
 .main-content {
   padding: 20px;
 }
-
 .intro {
   padding: 20px;
-  background-color: white;
-  border: 2px solid #AED581;
+  background-color: #fff;
+  border: 2px solid #aed581;
   margin-bottom: 20px;
   overflow: hidden;
 }
-
 .intro-text {
   float: left;
   width: 65%;
   padding-right: 20px;
 }
-
 .intro-text h1 {
   font-size: 36px;
   margin-bottom: 20px;
-  color: #2E7D32;
+  color: #2e7d32;
 }
-
 .intro-text p {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;
 }
-
 .join-button-container {
   position: absolute;
   top: 5px;
   right: 5px;
   z-index: 1000;
 }
-
 .register-button {
   padding: 10px 20px;
-  background-color: #66BB6A;
+  background-color: #66bb6a;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  color: white;
+  color: #fff;
 }
-
 .register-button:hover {
-  background-color: #388E3C;
+  background-color: #52b257;
 }
-
 .intro-image {
   float: right;
   width: 30%;
 }
-
 .intro-image img {
   width: 100%;
   height: auto;
-  border: 2px solid #AED581;
+  border: 2px solid #aed581;
   border-radius: 10px;
 }
-
 @media screen and (max-width: 768px) {
   .intro {
-      overflow: visible;
+    overflow: visible;
   }
-
   .intro-text {
-      float: none;
-      width: 100%;
-      padding-right: 0;
-      text-align: center;
+    float: none;
+    width: 100%;
+    padding-right: 0;
+    text-align: center;
   }
-
   .intro-image {
-      float: none;
-      width: 100%;
-      margin-top: 20px;
+    float: none;
+    width: 100%;
+    margin-top: 20px;
   }
 }
-
 .features {
   overflow: hidden;
   margin: 40px 0;
-  background-image: url('/images/ukraine.jpg');
+  background-image: url("/images/ukraine.jpg");
   background-size: cover;
   background-position: center;
   padding: 40px 20px;
-  border: 2px solid #AED581;
+  border: 2px solid #aed581;
 }
-
-
 .feature-card {
-  border: 2px solid #AED581;
+  border: 2px solid #aed581;
   padding: 20px;
-  background-color: white;
+  background-color: #fff;
   width: 30%;
   float: left;
   margin-right: 2%;
   text-align: center;
 }
-
 .feature-card:nth-child(3n) {
   margin-right: 0;
 }
-
 .guide {
   text-align: center;
 }
-
 .guide h2 {
   font-size: 28px;
   margin-bottom: 20px;
-  color: #2E7D32;
+  color: #2e7d32;
 }
-
 .steps {
   overflow: hidden;
   margin: 20px 0;
 }
-
 .step {
-  border: 2px solid #AED581;
+  border: 2px solid #aed581;
   padding: 20px;
-  background-color: white;
+  background-color: #fff;
   width: 18%;
   float: left;
   margin-right: 2%;
   text-align: center;
 }
-
 .step:nth-child(5n) {
   margin-right: 0;
 }
-
 @media (max-width: 768px) {
   .features,
   .steps {
-      float: none;
+    float: none;
   }
-
   .feature-card,
   .step {
-      width: 100%;
-      margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
-
 .footer {
   padding: 20px;
-  background-color: white;
-  border-top: 2px solid #AED581;
+  background-color: #fff;
+  border-top: 2px solid #aed581;
   margin-top: 20px;
   width: 100%;
 }
-
 .footer-logo {
   font-size: 24px;
-  color: #2E7D32;
+  color: #2e7d32;
 }
-
 .footer ul {
   list-style-type: none;
   padding: 0;
@@ -205,19 +173,17 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-
 .footer ul li {
   width: 31%;
   margin: 5px;
   padding: 10px;
   text-align: center;
   border-radius: 5px;
-  background-color: #66BB6A;
-  color: white;
+  background-color: #66bb6a;
+  color: #fff;
   transition: background-color 0.3s, color 0.3s;
 }
-
 .footer ul li:hover {
-  background-color: #388E3C;
-  color: white;
+  background-color: #52b257;
+  color: #fff;
 }
